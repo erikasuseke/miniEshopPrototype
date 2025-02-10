@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProAdmis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+
+    <main>
+        <Navigation></Navigation>
+
+        <div class="input">
+            <label>
+                <span>Įveskite produkto pavadinimą:</span>
+                <input id="produktas" type="text" placeholder="Produktas" />
+            </label>
+        </div>
+        <div class="input">
+            <label>
+                <span>Aprašymas:</span>
+                <textarea id="aprasymas"></textarea>
+            </label>
+        </div>
+        <div class="input">
+            <label>
+                <span>Įveskite produkto kainą:</span>
+                <input id="kaina" type="number" max="10000" min="0.10" placeholder="Kaina" />
+            </label>
+        </div>
+        <div class="input">
+            <label>
+                <span>Įveskite nuolaidą (neprivaloma):</span>
+                <input id="nuolaida" type="number" max="90" min="1" placeholder="Nuolaida" />
+            </label>
+        </div>
+        <div class="input">
+            <label>
+                <span>Įveskite likutį sandėlyje:</span>
+                <input id="likutis" type="number" max="10000" min="0" placeholder="Likutis" />
+            </label>
+        </div>
+        <div class="input">
+            <label>
+                <span>Įveskite prekinį ženklą:</span>
+                <input id="brand" type="text" placeholder="Brand" />
+            </label>
+        </div>
+        <div class="input">
+            <label>
+                <span>Pasirinkite kategoriją:</span>
+                <select id="category">
+                    <option value="home-decoration">Namų dekoracijos</option>
+                    <option value="groceries">Maisto prekės</option>
+                    <option value="skincare">Odos priežiūros produktai</option>
+                    <option value="fragrances">Kvepalai</option>
+                    <option value="laptops">Nešiojamieji kompiuteriai</option>
+                </select>
+            </label>
+        </div>
+        <button onclick="addProduct()" class="btn-yell">Pridėti prekę</button>
+
+        <table id="produktai">
+            <thead>
+                <tr>
+                    <th>Veiksmai</th>
+                    <th>Produktas</th>
+                    <th>Aprašymas</th>
+                    <th>Likutis</th>
+                    <th>Kaina</th>
+                    <th>Prekinis ženklas</th>
+                    <th>Kategorija</th>
+                </tr>
+            </thead>
+            <tbody id="products-list">
+                <tr>
+                    <td>OPPOF19</td>
+                    <td>OPPO F19 is...</td>
+                    <td>123</td>
+                    <td>280€</td>
+                    <td>OPPO</td>
+                    <td>Nešiojami kompiuteriai</td>
+                </tr>
+                <tr>
+                    <td>OPPOF19</td>
+                    <td>OPPO F19 is...</td>
+                    <td>123</td>
+                    <td>280€</td>
+                    <td>OPPO</td>
+                    <td>Nešiojami kompiuteriai</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <dialog id="modal">
+        <div class="input-dialog">
+            <label>
+                <span>Įveskite produkto pavadinimą:</span>
+                <input id="produktas-update" type="text" placeholder="Produktas" />
+            </label>
+        </div>
+        <div class="input-dialog">
+            <label>
+                <span>Aprašymas:</span>
+                <textarea id="aprasymas-update"></textarea>
+            </label>
+        </div>
+        <div class="input-dialog">
+            <label>
+                <span>Įveskite produkto kainą:</span>
+                <input id="kaina-update" type="number" max="10000" min="0.10" placeholder="Kaina" />
+            </label>
+        </div>
+        <div class="input-dialog">
+            <label>
+                <span>Įveskite nuolaidą (neprivaloma):</span>
+                <input id="nuolaida-update" type="number" max="90" min="1" placeholder="Nuolaida" />
+            </label>
+        </div>
+        <div class="input-dialog">
+            <label>
+                <span>Įveskite likutį sandėlyje:</span>
+                <input id="likutis-update" type="number" max="10000" min="0" placeholder="Likutis" />
+            </label>
+        </div>
+        <div class="input-dialog">
+            <label>
+                <span>Įveskite prekinį ženklą:</span>
+                <input id="brand-update" type="text" placeholder="Brand" />
+            </label>
+        </div>
+        <div class="input-dialog">
+            <label>
+                <span>Pasirinkite kategoriją:</span>
+                <select id="category-update">
+                    <option value="home-decoration">Namų dekoracijos</option>
+                    <option value="groceries">Maisto prekės</option>
+                    <option value="skincare">Odos priežiūros produktai</option>
+                    <option value="fragrances">Kvepalai</option>
+                    <option value="laptops">Nešiojamieji kompiuteriai</option>
+                </select>
+            </label>
+        </div>
+        <div class="button-group">
+            <button onclick="updateProduct()">Išsaugoti</button>
+            <button onclick="closeModal()">Uždaryti</button>
+        </div>
+    </dialog>
+
+    <script src="/updateProduct.js"></script>
+    <script src="deleteProduct.js"></script>
+    <script src="components.js"></script>
+    <script src="createProducts.js"></script>
+    <script src="htmlGeneration.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

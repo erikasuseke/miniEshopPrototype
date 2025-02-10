@@ -1,0 +1,96 @@
+.products {
+    padding: 3rem 0;
+    width: 80vw;
+    margin: 0 10%;
+}
+
+.product>.product-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 10px 0;
+}
+
+.price-and-actions {
+    min-width: 15%;
+}
+
+.price-and-actions>.price {
+    margin: 21px 0;
+    font-size: larger;
+}
+
+.price-and-actions>.price-with-discount>.discounted {
+    font-size: larger;
+    color: rgb(206, 48, 48);
+}
+
+.price-and-actions>.price-with-discount>.old-price {
+    font-size: small;
+    line-height: 0;
+    vertical-align: text-top;
+    text-decoration: line-through;
+    color: grey;
+}
+
+.price-and-actions>.price-with-discount {
+    margin: 21px 0;
+}
+
+.product-details>.details>h4 {
+    color: #16325B;
+    margin: 10px 0;
+}
+
+.product-details>.details {
+    width: 100%;
+}
+
+.price-and-actions>button {
+    background-color: #16325B;
+    outline: none;
+    border: none;
+    padding: 0.5rem 3rem;
+    white-space: nowrap;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 5px 5px 10px #dadada;
+}
+
+.price-and-actions>button:hover {
+    background-color: #FFDC7F;
+}
+
+.image {
+    position: relative;
+}
+
+.discount {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    padding: 4px 1rem;
+    color: white;
+    user-select: none;
+}
+
+.rating .bi {
+    color: rgb(252, 212, 81);
+    cursor: pointer;
+}
+
+#star-rating {
+    display: flex;
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.star.selected {
+    color: gold;
+}

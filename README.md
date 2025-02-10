@@ -1,2 +1,2 @@
-# miniEshopPrototype
+# Mini Eshop Prototype
 Studies project

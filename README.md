@@ -1,0 +1,2 @@
+# miniEshopPrototype
+Studies project

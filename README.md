@@ -1,7 +1,7 @@
 # Mini Eshop Prototype
 Studies project
 
-Basic Eshop prototype with admin and user panels.
+Basic Eshop prototype with admin and user panels. Built with vanilla JavaScript, CSS and HTML.
 
 Main functionalities:
 - CRUD 
